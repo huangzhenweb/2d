@@ -1,0 +1,485 @@
+*{
+    padding:0;
+    margin:0;
+}
+.box{
+    width: 600px;
+    height: 620px;
+    margin:20px auto;
+}
+/*脑袋*/
+.face {
+    width: 314px;
+    height: 304px;
+    position: relative;
+    background: #09B8E3;
+    border-radius: 146px;
+    -webkit-border-radius: 146px;
+    -moz-border-radius: 146px;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    background: -webkit-gradient(linear, right top, left bottom, from(#fff)
+    ,color-stop(0.20, #07beea), color-stop(0.73, #10a6ce),color-stop(0.95, #000), to(#444));
+    box-shadow: -5px 10px 15px rgba(0,0,0,0.45);
+    -webkit-box-shadow: -5px 10px 15px rgba(0,0,0,0.45);
+    -moz-box-shadow: -5px 10px 15px rgba(0,0,0,0.45);
+}
+/*耳朵*/
+.eyes{
+    position: relative;
+    top: -5px;
+}
+div.eye_left{
+    top: 45px;
+    left: 82px;
+}
+div.eye_right{
+    top: 45px;
+    left: 156px;
+}
+div.eye{
+    position: absolute;
+    border-radius: 35px 35px;
+    -webkit-border-radius: 35px 35px;
+    -moz-border-radius: 35px 35px;
+    border: 2px solid #000;
+    width: 72px;
+    height: 83px;
+    z-index: 20;
+    background: #fff;
+}
+div.black_left{
+    top: 100px;
+    left: 130px;
+    transition: transform 2s linear;
+}
+div.black_right{
+    top: 100px;
+    left: 170px;
+    transition: transform 3s linear;
+}
+div.black_left:hover{
+    transform:translate(0,-30px) ;
+}
+div.black_right:hover{
+    transform:translate(0,-30px) ;
+}
+div.black_eye{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    background: #333;
+    z-index: 21;
+}
+/*内脸*/
+.base{
+    position: relative;
+    top: -5px;
+}
+.base_write{
+    position: absolute;
+    border: #000 2px solid;
+    width: 264px;
+    height: 196px;
+    top: 85px;
+    left: 22px;
+    moz-border-radius: 150px 150px;
+    -webkit-border-radius: 150px 150px;
+    border-radius: 150px 150px;
+    background: #FFF;
+    background: -webkit-gradient(linear, right top, left bottom, from(#fff),color-stop(0.75,#fff),color-stop(0.83,#eee),color-stop(0.90,#999),color-stop(0.95,#444), to(#000));
+    background: -moz-linear-gradient(right top, #fff,#fff 75%, #eee 83%,#999 90%,#444 95%, #000);
+    z-index: 11;
+}
+.base .nose{
+    width:32px;
+    height: 32px;
+    border:2px solid #000;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    background: #c93e00;
+    position: absolute;
+    top: 30px;
+    left: 115px;
+    z-index: 30;
+}
+.base .nose .none_right{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    right:3px;
+    top:8px;
+    box-shadow: 1px 1px 5px #fff;
+    -webkit-box-shadow: 1px 1px 5px #fff;
+    -moz-box-shadow: 1px 1px 5px #fff;
+}
+.nose_line{
+    background: #000;
+    width: 3px;
+    height: 100px;
+    position: absolute;
+    top:60px;
+    left:132px;
+    z-index: 20;
+}
+.mouth{
+    width: 240px;
+    height: 500px;
+    border-bottom: 3px solid #333;
+    border-radius: 120px;
+     -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+    position: absolute;
+    top: -340px;
+    left: 11px;
+    z-index: 10;
+}
+.mouthwrite{
+    background: #fff;
+    width: 240px;
+    height: 90px;
+    position: relative;
+    top: 35px;
+    left: 12px;
+    z-index: 12;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 60px;
+}
+.whiskers{
+    background: #333;
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    z-index: 20;
+}
+.whi_right_top{
+    top: 58px;
+    left: 187px;
+}
+.whi_right{
+    top: 80px;
+    left: 189px;
+}
+.whi_right_bottom{
+    top: 103px;
+    left: 188px;
+}
+.whi_left_top{
+    top: 58px;
+    left: 16px;
+}
+.whi_left{
+    top: 80px;
+    left: 15px;
+}
+.whi_left_bottom{
+    top: 103px;
+    left: 16px;
+}
+.rotate160{
+    transform: rotate(160deg);
+    -webkit-transform: rotate(160deg);
+    -moz-transform: rotate(160deg);
+}
+.rotate20{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+}
+/*脖子*/
+.choker{
+    position: relative;
+    top: -55px;
+    left: 35px;
+    z-index: 100;
+}
+.bozi{
+    width: 237px;
+    height: 20px;
+    border: #000 solid 2px;
+    background: #ca4100;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ca4100), to(#800400));
+    background: -moz-linear-gradient(top, #ca4100, #800400);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    position: relative;
+    left: 0px;
+    top: 20px;
+}
+.boyuan{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border: 2px solid #000;
+    background: #f9f12a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f9f12a),color-stop(0.5, #e9e11a), to(#a9a100));
+    background: -moz-linear-gradient(top, #f9f12a, #e9e11a 75%,#a9a100);
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.25);
+    -webkit-box-shadow: -5px 3px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: -5px 5px 10px rgba(0,0,0,0.25);
+    position: relative;
+    top: 4px;
+    left: 98px;
+}
+.boyuan_line{
+    width: 36px;
+    height: 2px;
+    background: #f9f12a;
+    border: #333 solid 2px;
+    position: relative;
+    top: 10px;
+}
+.boyuan_cricle{
+    width:12px;
+    height: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background: #000;
+    position: relative;
+    top: 14px;
+    left: 14px;
+}
+.boyuan_under{
+    width: 3px;
+    height: 15px;
+    background: #000;
+    position: relative;
+    top: 10px;
+    left: 18px;
+}
+/*身子*/
+.shenzi{
+    position: absolute;
+    width: 220px;
+    height: 165px;
+    background: #07beea;
+    background: -webkit-gradient(linear, right top, left top, from(#07beea),color-stop(0.5, #0073b3),color-stop(0.75,#00b0e0), to(#0096be));
+    background: -moz-linear-gradient(right, #07beea, #0073b3 50%,#0096be 75%,#00b0e0 ,#0096be 100% ,#333 114%);
+    /*box-shadow: -8px 10px 15px rgba(0,0,0,0.45);*/
+    /*-webkit-box-shadow: -8px 10px 15px rgba(0,0,0,0.45);*/
+    /*-moz-box-shadow: -8px 10px 15px rgba(0,0,0,0.45);*/
+    border: #333 2px solid;
+    top: 290px;
+    left: 420px;
+}
+.shenzi_center{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border-radius: 85px;
+    -webkit-border-radius: 85px;
+    -moz-border-radius: 85px;
+    border: 2px solid #000;
+    background: #FFF;
+    background: -webkit-gradient(linear, right top, left bottom, from(#fff),color-stop(0.75,#fff),color-stop(0.83,#eee),color-stop(0.90,#999),color-stop(0.95,#444), to(#000));
+    background: -moz-linear-gradient(right top, #fff,#fff 75%, #eee 83%,#999 90%,#444 95%, #000);
+    position: absolute;
+    top: 257px;
+    left: 445px;
+    /*z-index: 10;*/
+}
+.circle{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+    -webkit-border-radius: 65px;
+    -moz-border-radius: 65px;
+    background: #fff;
+    background: -webkit-gradient(linear, right top, left bottom, from(#fff),color-stop(0.70,#fff),color-stop(0.75,#f8f8f8),color-stop(0.80,#eee),color-stop(0.88,#ddd), to(#fff));
+    background: -moz-linear-gradient(right top, #fff, #fff 70%,#f8f8f8 75%,#eee 80%,#ddd 88% , #fff);
+    border: 2px solid #000;
+    top: -110px;
+    left: 84px;
+    z-index: 9;
+}
+.circle_write{
+    position: relative;
+    width:134px;
+    height: 60px;
+    background: #fff;
+    border-bottom: 2px solid #000;
+    top:-232px;
+    left:84px;
+    z-index: 10;
+
+}
+/*右手*/
+.hand_right{
+    width:100px;
+    height: 100px;
+    position: absolute;
+    top:313px;
+    left:617px;
+}
+.arm_right{
+    position: relative;
+    width: 80px;
+    height: 50px;
+    background: #07beea;
+    background: -webkit-gradient(linear, left top, left bottom, from(#07beea),color-stop(0.85,#07beea), to(#555));
+    background: -moz-linear-gradient(top, #07beea, #07beea 85%, #555);
+    border: solid 1px #000;
+    z-index: -1;
+    top: 15px;
+    transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    box-shadow: -10px 7px 10px rgba(0,0,0,0.35);
+    -webkit-box-shadow: -10px 7px 10px rgba(0,0,0,0.35);
+    -moz-box-shadow: -10px 7px 10px rgba(0,0,0,0.35);
+}
+.hand_cricle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border: 2px solid #000;
+    background: #fff;
+    background: -webkit-gradient(linear, right top, left bottom, from(#fff),color-stop(0.5,#fff),color-stop(0.70,#eee),color-stop(0.8,#ddd), to(#999));
+    background: -moz-linear-gradient(right top, #fff, #fff 50%, #eee 70%, #ddd 80%,#999);
+    position: absolute;
+    top: 32px;
+    left: 40px;
+}
+.arm_write_right{
+    position: relative;
+    width: 4px;
+    height: 45px;
+    background: #07beea;
+    top: -52px;
+    left: 23px;
+}
+/*左手*/
+.hand_left{
+    width:100px;
+    height: 100px;
+    position: absolute;
+    top:313px;
+    left:326px;
+    /*background: #ff00ff;*/
+}
+.arm_left{
+    position: relative;
+    width: 80px;
+    height: 50px;
+    background: #0096be;
+    border: solid 1px #000;
+    z-index: -1;
+    top: 17px;
+    left: 36px;
+    transform: rotate(145deg);
+    -webkit-transform: rotate(145deg);
+    -moz-transform: rotate(145deg);
+    -o-transform: rotate(145deg);
+    box-shadow: 5px -7px 10px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 5px -7px 10px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px -7px 10px rgba(0,0,0,0.25);
+}
+.cricle_left{
+    top: 32px;
+    left: 14px;
+}
+.arm_write_left{
+    position: relative;
+    width: 4px;
+    height: 45px;
+    background: #0096be;
+    top: -51px;
+    left: 92px;
+}
+/*底部*/
+.foot{
+    position: relative;
+    width: 280px;
+    height: 40px;
+    top:-141px;left:20px;
+
+}
+.foot_left{
+    width: 125px;
+    height: 30px;
+    background: #fff;
+    background: -webkit-gradient(linear, right top, left bottom, from(#fff),color-stop(0.75,#fff),color-stop(0.85,#eee), to(#999));
+    background: -moz-linear-gradient(right top, #fff,#fff 75%, #eee 85%, #999);
+    border: solid 2px #333;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    -webkit-border-top-left-radius: 80px;
+    -webkit-border-bottom-left-radius: 40px;
+    -webkit-border-top-right-radius: 60px;
+    -webkit-border-bottom-right-radius: 60px;
+    -moz-border-radius-topleft: 80px;
+    -moz-border-radius-bottomleft: 40px;
+    -moz-border-radius-topright: 60px;
+    -moz-border-radius-bottomright: 60px;
+    position: relative;
+    left: 6px;
+    top: 9px;
+    box-shadow: -6px 0px 10px rgba(0,0,0,0.35);
+    -webkit-box-shadow: -6px 0px 10px rgba(0,0,0,0.35);
+    -moz-box-shadow: -6px 0px 10px rgba(0,0,0,0.35);
+    /*z-index: -1;*/
+}
+.foot_right{
+    position: relative;
+    width: 125px;
+    height: 30px;
+    background: #fff;
+    background: -webkit-gradient(linear, right top, left bottom, from(#fff),color-stop(0.75,#fff),color-stop(0.85,#eee), to(#999));
+    background: -moz-linear-gradient(right top, #fff,#fff 75%, #eee 85%, #999);
+    border: solid 2px #333;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 40px;
+    -webkit-border-top-left-radius: 60px;
+    -webkit-border-bottom-left-radius: 60px;
+    -webkit-border-top-right-radius: 80px;
+    -webkit-border-bottom-right-radius: 40px;
+    -moz-border-radius-topleft: 60px;
+    -moz-border-radius-bottomleft: 60px;
+    -moz-border-radius-topright: 80px;
+    -moz-border-radius-bottomright: 40px;
+    top: -25px;
+    left: 141px;
+    box-shadow: -6px 0px 10px rgba(0,0,0,0.35);
+    -webkit-box-shadow: -6px 0px 10px rgba(0,0,0,0.35);
+    -moz-box-shadow: -6px 0px 10px rgba(0,0,0,0.35);
+    /*z-index: -1;*/
+}
+.foot_write{
+    position: relative;
+    width: 20px;
+    height: 10px;
+    background: #fff;
+    background: -webkit-gradient(linear, right top, left bottom, from(#666),color-stop(0.83,#fff), to(#fff));
+    background: -moz-linear-gradient(right top, #666, #fff 83%, #fff);
+    top: -67px;
+    left: 127px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    -webkit-border-top-right-radius: 40px;
+    -webkit-border-top-left-radius: 40px;
+    -moz-border-radius-topleft: 40px;
+    -moz-border-radius-topright: 40px;
+}

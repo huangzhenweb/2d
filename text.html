@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>钟表</title>
+    <style>
+        .clock{
+            width: 200px;
+            height:200px;
+            border:1px solid #0ff;
+            background: radial-gradient(pink,#0ff);
+            box-shadow: 0 0 10px #000;
+            margin:auto;
+            position: fixed;
+            left:0;top:0;bottom:0;right:0;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var clock=document.querySelector(".clock");
+            creatMath();
+            var times= new Date();
+            var hours=times.getHours();
+            var min=times.getMinutes();
+            var sec=times.getSeconds();
+            h= creatzhen(3,60,hours*30+min*6/12);
+            m= creatzhen(2,70,min*6);
+            s= creatzhen(1,80,sec*6);
+           t=setInterval(function(){
+//                alert(1)
+                var times= new Date();
+                var hours=times.getHours();
+//                console.log(hours)
+                var min=times.getMinutes();
+                var sec=times.getSeconds();
+                h.style.transform="rotate("+(hours*30+min*6/12)+"deg)";
+                m.style.transform="rotate("+min*6+"deg)";
+                s.style.transform="rotate("+sec*6+"deg)";
+
+            },1000);
+            function creatMath(){
+                var widths,heights;
+                for(var i =0;i<60;i++){
+                    if(i%5==0){
+                        widths=4;
+                        heights=10;
+                    }else{
+                        widths=2;
+                        heights=6;
+                    }
+                    var div=document.createElement("div");
+                    div.style.cssText="width:"+widths+"px;height:"+heights+"px;background:#000;position:absolute;left:"+(200-widths)/2+"px;top:0";
+                    div.style.transformOrigin="center 100px";
+                    div.style.transform="rotate("+i*6+"deg)";
+                    clock.appendChild(div);
+                }
+            }
+            function creatzhen(w,h,c){
+                var div=document.createElement("div");
+                var lefts=(200-w)/2;
+                var tops=200/2-h;
+                div.style.cssText="width:"+w+"px;height:"+h+"px;background:#000;position:absolute;left:"+lefts+"px;top:"+tops+"px";
+                div.style.transformOrigin="center bottom";
+                div.style.transform="rotate("+c+"deg)";
+                clock.appendChild(div);
+                return div;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="clock">
+
+    </div>
+</body>
+</html>
